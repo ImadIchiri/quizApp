@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <!-- Start Result Container -->
+    <div class="result_container" id="result_container">
+      <h2 id="resule_title" class="resule_title"></h2>
+      <h3 class="result green">
+        Correct Answers: <span id="correct_number"></span>
+      </h3>
+      <h3 class="result red">Wrong Answers: <span id="wrong_number"></span></h3>
+
+      <h4 class="score">Scrore: <span id="score_number"></span></h4>
+
+      <button id="play_again">Play Again</button>
+    </div>
+    <!-- End Result Container -->
+
+    <!-- Start Quiz Container -->
+    <div class="quiz_container" id="quiz_container">
+      <!-- Start Progress Bar -->
+      <div class="progress_bar" id="progress_bar"></div>
+      <!-- End Progress Bar -->
+      <h2 id="question" class="question">
+        A group of which animals is referred to as a wake?
+      </h2>
+      <div class="choices" id="choices">
+        <!-- 
+            <div class="answer_container">
+                <input type="radio" name="answer" id="answer-4" />
+                <label for="answer-4">Answer-4</label>
+            </div> 
+        -->
+      </div>
+      <button id="submit_button">Submit</button>
+    </div>
+    <!-- Start Quiz Container -->
+    <script src="javaScript/questions.js" type="module"></script>
+    <script src="javaScript/logic.js" type="module"></script>
+    <script src="javaScript/main.js" type="module"></script>
+  </body>
+</html>
